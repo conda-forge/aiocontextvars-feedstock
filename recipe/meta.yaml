@@ -1,5 +1,5 @@
 {% set name = "aiocontextvars" %}
-{% set version = "0.2.1" %}
+{% set version = "0.2.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 1e0ff5837c8b01c36a1107acdd0baf7853ebdf6c9fc43e8e311f4be37ac2038a
+  sha256: f027372dc48641f683c559f247bd84962becaacdc9ba711d583c3871fb5652aa
 
 build:
   noarch: python
@@ -21,7 +21,7 @@ requirements:
     - pytest-runner
   run:
     - python >=3.5,<3.7
-    - contextvars ==2.3
+    - contextvars ==2.4
 
 test:
   imports:
