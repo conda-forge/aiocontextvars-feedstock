@@ -21,7 +21,7 @@ requirements:
     - setuptools
     - pytest-runner
   run:
-    - python >={{ python_min }},<3.7
+    - python >={{ python_min }}
     - contextvars ==2.4
 
 test:
